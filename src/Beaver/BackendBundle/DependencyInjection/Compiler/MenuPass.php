@@ -21,7 +21,7 @@ class MenuPass implements CompilerPassInterface
     {
         $taggedServices = $container->findTaggedServiceIds('beaver.wood.menu');
         
-        $definition = $container->findDefinition('beaver_backend.menu');
+        $definition = $container->findDefinition('beaver.backend.menu');
         
         foreach ($taggedServices as $id => $tags) {
             $definition->addMethodCall('addWoodMenuService', [new Reference($id)]);

@@ -1,7 +1,3 @@
-test:
-    path:       /jaja
-    defaults:   { _controller: BeaverBackendBundle:Service:test }
-
 backend.page:
     prefix: /ajax
     resource: 'routes/page.ajax.yml'

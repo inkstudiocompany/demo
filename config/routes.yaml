@@ -1,7 +1,8 @@
+backend:
+    resource: "@BackendBundle/Resources/config/routing.yml"
+    prefix:   /backend
+
 index:
     path: /
     controller: Controller\HomePageController::index
 
-beaver_backend:
-    resource: "@BackendBundle/Resources/config/routing.yml"
-    prefix:   /backend

@@ -1,4 +1,4 @@
 services:
-    beaver_contents.contents:
+    beaver.content:
         class: Beaver\ContentBundle\Service\ContentService
         arguments: [ '@doctrine.orm.entity_manager', '@service_container', '@form.factory']

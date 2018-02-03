@@ -45,10 +45,10 @@ class ControllerBase extends AbstractController
      * @param Response|null $response
      * @return Response
      */
-    protected function render(string $view, array $parameters = array(), Response $response = null): Response
+    public function render(string $view, array $parameters = array(), Response $response = null): Response
     {
         $parameters['Bundle']   = self::Bundle();
-        $parameters['menu']     = $this->get('beaver_backend.menu')->getMenu();
+        $parameters['menu']     = $this->get('beaver.backend.menu')->getMenu();
         return parent::render($view, $parameters, $response);
     }
 }

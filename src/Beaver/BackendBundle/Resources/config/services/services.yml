@@ -4,10 +4,10 @@ services:
         class: Beaver\BackendBundle\Service\PageService
         arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.layouts', '@beaver_core.block', '@beaver_core.context']
 
-    beaver_backend.menu:
+    beaver.backend.menu:
         public: true
         class: Beaver\BackendBundle\Service\MenuBuilderService
-        arguments: ['@router', '@beaver_contents.contents']
+        arguments: ['@router', '@beaver.content']
 
     beaver.wood.backend.menu:
         public: true

@@ -37,16 +37,17 @@ class ContentService
         $this->entityManager    = $entityManager;
         $this->serviceContainer = $serviceContainer;
     }
-
+    
     /**
-     * Returns contents enables.
-     * @return mixed|string
+     * @return array|mixed
      */
     public function getContents()
     {
-        if (true === $this->serviceContainer->hasParameter('beaver_core.contents')) {
-            return $this->serviceContainer->getParameter('beaver_core.contents');
+        $contents = [];
+        if (true === $this->serviceContainer->hasParameter('contents')) {
+            $contents = $this->serviceContainer->getParameter('contents');
         }
+        return $contents;
     }
 
     /**

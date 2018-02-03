@@ -1,14 +1,14 @@
 beaver.backend.default:
     path:     /
-    defaults: { _controller: BackendBundle:Backend:index, slug: 'home' }
+    controller: Beaver\BackendBundle\Controller\BackendController::index
 
 beaver.backend.dashboard:
     path:     /dashboard
-    defaults: { _controller: BeaverBackendBundle:Backend:index }
+    controller: Beaver\BackendBundle\Controller\BackendController::index
 
 beaver.backend.pages:
     path:     /pages
-    defaults: { _controller: BeaverBackendBundle:Backend:pages }
+    controller: Beaver\BackendBundle\Controller\BackendController::page
 
 beaver.backend.page.new:
     path:     /page/new

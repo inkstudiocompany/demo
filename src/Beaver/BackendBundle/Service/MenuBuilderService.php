@@ -5,13 +5,11 @@
  * Date: 2/11/17
  * Time: 21:10
  */
-
 namespace Beaver\BackendBundle\Service;
 
 use Beaver\BackendBundle\Model\Menu\Item;
 use Beaver\CoreBundle\Service\ContentService;
 use Symfony\Bundle\FrameworkBundle\Routing\Router;
-
 
 /**
  * Class MenuBuilderService
@@ -101,9 +99,9 @@ class MenuBuilderService
 	private function contents()
     {
         $typeContents = [];
-        /*foreach ($this->contentService->getContents() as $type => $content) {
+        foreach ($this->contentService->getContents() as $type => $content) {
             $typeContents[] = new Item($this->router->generate('beaver.backend.contents', ['content' => strtolower($type)]), $type);
-        }*/
+        }
         return $typeContents;
     }
 }

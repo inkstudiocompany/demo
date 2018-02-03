@@ -34,7 +34,8 @@
     },
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "": "src/",
+            "Beaver\\CoreBundle\\": "src/Beaver/CoreBundle"
         }
     },
     "autoload-dev": {

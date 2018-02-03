@@ -1,3 +1,12 @@
 parameters:
-    beaver_blocks_directory:
+    layouts:
+        - Beaver\CoreBundle\Model\Page\Layout\DefaultLayout
+
+    blocks:
         - { name: 'Ancho full Overwrite', twig: 'BeaverCore/Blocks/full_block.html.twig' }
+
+    contents:
+        - { type: dummy, name: 'Dummy content', manager: \Beaver\ContentBundle\Contents\Dummy\DummyManager }
+
+    beaver_blocks_directory:
+        - { name: 'Ancho full', twig: 'BeaverCore/Blocks/full_block.html.twig' }

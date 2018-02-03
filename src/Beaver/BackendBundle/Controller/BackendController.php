@@ -5,6 +5,7 @@ namespace Beaver\BackendBundle\Controller;
 use Beaver\BackendBundle\Form\PageFormType;
 use Beaver\CoreBundle\Response\BaseResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class BackendController
@@ -12,15 +13,19 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class BackendController extends ControllerBase
 {
-	/**
-	 * @return \Symfony\Component\HttpFoundation\Response
-	 */
-	public function indexAction()
+    /**
+     * @return Response
+     */
+	public function index()
 	{
 	    return $this->render('@Backend/Backend/home.html.twig');
 	}
-	
-	public function pagesAction()
+    
+    /**
+     * @return Response
+     * @throws \Exception
+     */
+	public function pages()
 	{
 	    $pagesResponse = $this->get('beaver_backend.page')->getPages();
 	    
@@ -33,13 +38,12 @@ class BackendController extends ControllerBase
 		    'pages' => $pagesResponse->getData()
         ]);
 	}
-	
-	/**
-	 * @param \Symfony\Component\HttpFoundation\Request $request
-	 *
-	 * @return \Symfony\Component\HttpFoundation\Response
-	 */
-	public function pageAction(Request $request)
+    
+    /**
+     * @param Request $request
+     * @return Response
+     */
+	public function page(Request $request)
     {
         $success = null;
     

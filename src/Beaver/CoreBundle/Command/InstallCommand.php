@@ -7,7 +7,7 @@
  */
 namespace Beaver\CoreBundle\Command;
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
@@ -19,7 +19,7 @@ use Symfony\Component\Process\Process;
  * Class InstallCommand
  * @package Beaver\CoreBundle\Command
  */
-class InstallCommand extends ContainerAwareCommand
+class InstallCommand extends Command
 {
     private $src = ['src/', 'vendor/beaver/'];
     private $temporal = './beaverDev/';
@@ -28,12 +28,16 @@ class InstallCommand extends ContainerAwareCommand
         'package.json',
         'gulpfile.js'
     ];
-
+    
+    /**
+     *
+     */
     protected function configure()
     {
         $this
-            ->setName('beaver:install')
+            ->setName('backend:install')
             ->setDescription('Instalacion de los componentes de distribución.')
+            ->setHelp('helping...')
         ;
     }
 

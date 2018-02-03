@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Beaver CMS</title>
+
+        <!-- Styles Sheets -->
+        {% include '@Backend/Backend/Components/styles.html.twig' %}
+
+        <!-- Javascripts -->
+        {% include '@Backend/Backend/Components/javascript.html.twig' %}
+
+        {% block custom_javascript %}
+        {% endblock custom_javascript %}
+
+        {% block custom_styles %}
+
+        {% endblock custom_styles %}
+    </head>
+
+    <body>
+        {% include '@Backend/Admin/navbar.html.twig' %}
+
+        <div class="container beaver-container">
+            {% block body %}{% endblock body %}
+
+            <div id="beaver-modal-wrapper"></div>
+            <div id="loading" class="beaver-loading out">
+                <img src="{{ asset('bundles/beaverBackend/images/hourglass.gif') }}" />
+            </div>
+        </div>
+    </body>
+</html>

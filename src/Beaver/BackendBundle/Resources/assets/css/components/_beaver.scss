@@ -1,0 +1,32 @@
+* {
+    outline: none !important;
+}
+
+.beaver-container
+{
+    width: 95vw;
+    margin: 10px auto 10px auto;
+    margin-left: 55px;
+
+    .bg-component
+    {
+        font-family: $font-family;
+    }
+}
+
+.beaver-mockup
+{
+    display: none;
+}
+
+.published {
+    background-color: $published-color !important;
+}
+
+.unpublished {
+    background-color: $unpublished-color !important;
+}
+
+.ui.dimmer.active {
+    z-index:999;
+}

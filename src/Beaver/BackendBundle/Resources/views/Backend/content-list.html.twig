@@ -1,0 +1,58 @@
+{% extends '@Backend/Base/backend-wrapper.html.twig' %}
+{% import '@Backend/Macros/components.html.twig' as Components %}
+
+{% block custom_javascript %}
+    <script type="text/javascript">
+        $(function () {
+            $.fn.pagePublishButtons();
+        });
+    </script>
+{% endblock custom_javascript %}
+
+{% block body %}
+    <h1 class="ui header">{{ type | capitalize }}s</h1>
+    <a href="{{ path('beaver.backend.new', {'content':type}) }}">Crear {{ type | capitalize }}</a>
+
+
+    <table class="table rounded">
+        <thead class="thead-light">
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if content is empty %}
+                <tr>
+                    <td colspan="2">
+                        No existen contenidos
+                    </td>
+                </tr>
+            {% endif %}
+
+            {% for item in content %}
+                <tr>
+                    <td>
+                        {{ item.listName }}
+                    </td>
+                    <td>
+                        {{ Components.isPublished(item) }}
+                    </td>
+                    <td>
+                        <div class="ui buttons">
+                            <a href="{{ path('beaver.backend.edit', {'content': type, 'id': item.id}) }}"
+                               class="ui button" title="Edit">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </a>
+                            <a href="{{ path('beaver.backend.delete', {'content': type, 'id': item.id}) }}"
+                               class="ui button" title="Delete">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}

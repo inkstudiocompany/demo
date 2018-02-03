@@ -1,0 +1,32 @@
+imports:
+    - { resource: 'widgets.yml' }
+
+services:
+    beaver_core.context:
+        public: false
+        class: Beaver\CoreBundle\Service\ContextService
+        arguments: ['@router.request_context']
+    beaver_core.layouts:
+        public: false
+        class: Beaver\CoreBundle\Service\LayoutService
+        arguments: ['@service_container']
+
+    beaver_core.page:
+        public: true
+        class: Beaver\CoreBundle\Service\PageService
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.layouts', '@beaver_core.block', '@beaver_core.context']
+
+    beaver_core.block:
+        public: false
+        class: Beaver\CoreBundle\Service\BlockService
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.context', '@beaver_core.components', '@beaver_core.widget', '%kernel.project_dir%', '%beaver_blocks_directory%']
+
+    beaver_core.widget:
+        public: false
+        class: Beaver\CoreBundle\Service\WidgetService
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.context', '@beaver_core.components']
+
+    beaver_core.components:
+        public: false
+        class: Beaver\CoreBundle\Service\ComponentService
+        arguments: [ '@doctrine.orm.entity_manager']

@@ -1,0 +1,36 @@
+beaver.ajax.blocks.form:
+    path:       /blocks/form
+    methods:    [GET]
+    defaults:   { _controller: BeaverBackendBundle:Ajax/Block:newModal }
+    condition: 'request.isXmlHttpRequest()'
+
+beaver.ajax.blocks.get:
+    path:       /blocks
+    methods:    [GET]
+    defaults:   { _controller: BeaverBackendBundle:Ajax/Block:get }
+    condition: 'request.isXmlHttpRequest()'
+
+beaver.ajax.blocks.save:
+    path:       /blocks
+    methods:    [POST]
+    defaults:   { _controller: BeaverBackendBundle:Ajax\Block:save }
+    condition: 'request.isXmlHttpRequest()'
+
+beaver.ajax.blocks.drop:
+    path:       /blocks
+    methods:    [DELETE]
+    defaults:   { _controller: BeaverBackendBundle:Ajax/Block:drop }
+    condition: 'request.isXmlHttpRequest()'
+
+beaver.ajax.blocks.publish:
+    path:       /blocks/{block}/publish
+    methods:    [PUT]
+    defaults:   { _controller: BeaverBackendBundle:Ajax/Block:publish }
+    condition: 'request.isXmlHttpRequest()'
+
+beaver.backend.ajax.block.move:
+    path:       /blocks/{blockToMove}/move/{blockToReplace}
+    methods:    [PUT]
+    defaults:   { _controller: BeaverBackendBundle:Ajax/Block:move }
+    condition: 'request.isXmlHttpRequest()'
+

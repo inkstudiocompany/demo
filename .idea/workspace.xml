@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0778dd7e-887a-4874-ad1a-bd91d5031ca3" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/leonardojsuarez.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/parameters.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/BackendBundle.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/Ajax/BlockController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/Ajax/PageController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/Ajax/WidgetController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/BackendController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/ContentController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/ControllerBase.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/ServiceController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/DependencyInjection/BeaverBackendExtension.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/DependencyInjection/Compiler/MenuPass.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/DependencyInjection/Configuration.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Form/BlockFormType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Form/PageFormType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Form/WidgetFormType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Model/Menu/Item.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Area.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Block.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Http.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Modal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Prototype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Slot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/helper/_Widget.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/beaver/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_beaver.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_blocks-system.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_burguer-icon.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_forms.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_loading.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_navbar.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/components/_slots-system.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/css/mixins/_border_radius.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/images/hourglass.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/burger-menu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/endpoints.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/modal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/page.list.buttons.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/slots.admin.buttons.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/jquery-plugins/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/js/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/styles.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/assets/variables.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/block.ajax.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/page.ajax.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/widget.ajax.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/services.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/services/forms.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/services/services.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/bars/block-admin-bar.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/bars/slot-admin-bar.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/basic-cancel-button.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/basic-modal.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/modal/alert.modal.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/modal/confirm.modal.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Admin/navbar.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/Components/javascript.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/Components/styles.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/content-list.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/home.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/pages-list.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/backend-wrapper.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/wrapper.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Embed/form.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Forms/Modal/block.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Forms/Modal/widget.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Forms/content.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Forms/form-base.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Forms/page.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Layouts/Blocks/block_base.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Macros/admin.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Macros/components.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Macros/form.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Macros/menu.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Macros/widget.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/BackendMenuService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/FormProcessor.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/Interfaces/BackendFormInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/Interfaces/WoodMenuAbstract.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/MenuBuilderService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/PageService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/BackendBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Contents/AbstractContent.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Contents/AbstractContentManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Contents/ContentInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Contents/ContentManagerInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Entity/AbstractContentEntity.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Entity/ContentEntityInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Base/Form/AbstractContentType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/ContentBundle.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Banner/Banner.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Banner/BannerManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Banner/BannerResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Banner/BannerType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Dummy/Dummy.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Dummy/DummyManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Dummy/DummyResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Contents/Dummy/DummyType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/DependencyInjection/BeaverContentExtension.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/DependencyInjection/Configuration.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/DependencyInjection/TextManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Entity/Banner.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Entity/Dummy.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Resources/config/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Resources/config/services.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Service/ContentService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/ContentBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Command/InstallAssetsCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Command/InstallCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Command/UpdateDistributionCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Controller/ControllerBase.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Controller/PageController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/CoreBundle.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/DependencyInjection/BeaverCoreExtension.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/DependencyInjection/Compiler/WidgetPass.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/DependencyInjection/Configuration.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/config/beaver.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/config/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/config/security.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulp-tasks/fonts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulp-tasks/images.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulp-tasks/javascript.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulp-tasks/sass.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulp-tasks/scripts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/gulpfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Distribution/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/Block.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/BlockTemplate.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/Page.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/Widget.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/WidgetSize.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Entity/WidgetTemplate.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/Base/AbstractComponentManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/Base/DeprecatedAbstractContentManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/BlockManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/Interfaces/ComponentManagerInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/Interfaces/DeprecatedContentManagerInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Manager/WidgetManager.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Base/AbstractModel.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Base/Statutory.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Configuration/BlockTemplate.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Configuration/Widget.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Interfaces/LayoutInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Interfaces/ModelInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Page/Area.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Page/Block.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Page/Layout/DefaultLayout.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Page/Page.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Model/Page/Widget.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/config.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/services.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/widgets.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/public/images/layouts/default-layout.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Base/header-styles.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Base/wrapper.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Blocks/full_block.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Components/blocks.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Layouts/Blocks/block_12.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Layouts/Blocks/block_4_4_4.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Layouts/Blocks/block_4_4_4_4.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Layouts/Blocks/block_base.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Layouts/Page/default-layout.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Macros/admin.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Macros/widget.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/views/Widget/banner.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/ArrayResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/BaseResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/BlockResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/BlockTemplateResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/BooleanResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/Error.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/InstanceResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/Interfaces/ResponseInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/MixedResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/PageResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/WidgetResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Response/WidgetTemplateResponse.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/AbstractManagerService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/BlockService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/ComponentService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/ContextService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/LayoutService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/PageService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/WebComponentAbstractService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Service/WidgetService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Widgets/Dummy/DummyWidget.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/CoreBundle/Widgets/WidgetInterface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Beaver/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/HomePageController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/home.html.twig" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MenuBuilderService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Service/MenuBuilderService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wrapper.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/wrapper.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="e#12#46#0#Twig" expanded="true" />
+                <element signature="e#106#150#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>beaver_backend</find>
+      <find>@BeaverBackend</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>@Backend</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/Beaver</dir>
+      <dir>$PROJECT_DIR$/src/Beaver/BackendBundle/Resources</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Kernel.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/src/Controller/HomePageController.php" />
+        <option value="$PROJECT_DIR$/templates/home.html.twig" />
+        <option value="$PROJECT_DIR$/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/BackendBundle.php" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/DependencyInjection/Compiler/MenuPass.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/Beaver/CoreBundle/CoreBundle.php" />
+        <option value="$PROJECT_DIR$/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Beaver/ContentBundle/ContentBundle.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/config/bundles.php" />
+        <option value="$PROJECT_DIR$/bin/console" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/ControllerBase.php" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/BackendController.php" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/home.html.twig" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Service/MenuBuilderService.php" />
+        <option value="$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/wrapper.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" zd_debug_auto_detect_ide_hosts="false" zd_debug_configured_ide_host="192.168.0.12,127.0.0.1" />
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="21264ea7-5494-4a6d-995e-f4bf7d62c384" name="localhost" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.x">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-45" />
+    <option name="y" value="-768" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AssetSymfony</id>
+          </State>
+          <State>
+            <id>FormSymfony</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>RouteSymfony</id>
+          </State>
+          <State>
+            <id>ServiceSymfony</id>
+          </State>
+          <State>
+            <id>Symfony</id>
+          </State>
+          <State>
+            <id>TemplateSymfony</id>
+          </State>
+          <State>
+            <id>TranslationSymfony</id>
+          </State>
+          <State>
+            <id>TwigSymfony</id>
+          </State>
+          <State>
+            <id>YamlSymfony</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Beaver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Symfony4" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="localhost" session_id="XDEBUG_SESSION" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0778dd7e-887a-4874-ad1a-bd91d5031ca3" name="Default" comment="" />
+      <created>1517667707947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517667707947</updated>
+      <workItem from="1517667722771" duration="5660000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5660000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-45" y="-745" width="1366" height="745" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Beaver/BackendBundle/Service/MenuBuilderService.php</url>
+          <line>102</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Beaver/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/FrameworkBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/HomePageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="false" />
+            <element signature="e#121#186#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/BackendBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#102#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/services/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/DependencyInjection/Compiler/MenuPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/CoreBundle/CoreBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/ContentBundle/ContentBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#26#81#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/ControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="201" column="84" lean-forward="false" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="84" />
+          <folding>
+            <element signature="e#292#340#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/ControllerBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#50#115#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/config/routes/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Controller/BackendController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Backend/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/backend-wrapper.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Service/MenuBuilderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beaver/BackendBundle/Resources/views/Base/wrapper.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#12#46#0#Twig" expanded="true" />
+            <element signature="e#106#150#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

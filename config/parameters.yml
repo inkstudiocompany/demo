@@ -1,0 +1,3 @@
+parameters:
+    beaver_blocks_directory:
+        - { name: 'Ancho full Overwrite', twig: 'BeaverCore/Blocks/full_block.html.twig' }

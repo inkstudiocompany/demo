@@ -1,0 +1,57 @@
+{% extends '@Backend/Base/backend-wrapper.html.twig' %}
+{% import '@Backend/Macros/components.html.twig' as Components %}
+
+{% block custom_styles %}
+    {{ parent() }}
+{% endblock custom_styles %}
+
+{% block custom_javascript %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(function () {
+            $.fn.pagePublishButtons();
+        });
+    </script>
+{% endblock custom_javascript %}
+
+{% block body %}
+    <h1 class="ui header">Pages</h1>
+
+    <table class="table rounded">
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Layout</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for page in pages %}
+            <tr>
+                <td>{{ page.id }}</td>
+                <td>{{ page.name }}</td>
+                <td>{{ page.layout }}</td>
+                <td>
+                    {{ Components.isPublished(page) }}
+                </td>
+                <td class="float-right">
+                    <div class="ui buttons">
+                        <a href="{{ path('beaver.backend.page.edit', {'id': page.id}) }}"
+                           class="btn btn-outline-info" title="Edit">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </a>
+                        <button class="btn btn-info" title="Delete">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                        <a class="btn btn-info" title="Preview" href="{{ page.slug }}">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}

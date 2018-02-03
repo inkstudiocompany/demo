@@ -1,0 +1,17 @@
+imports:
+    - { resource: '@BeaverBackendBundle/Resources/config/services.yml' }
+    - { resource: '@BeaverCoreBundle/Resources/config/services.yml' }
+
+parameters:
+    page.layouts:
+        - Beaver\CoreBundle\Model\Page\Layout\DefaultLayout
+    contents:
+        #- { type: banner, name: Banner, manager: \Beaver\ContentBundle\Contents\Banner\BannerManager }
+        - { type: dummy, name: 'Dummy content', manager: \Beaver\ContentBundle\Contents\Dummy\DummyManager }
+    beaver_blocks_directory:
+        - { name: 'Ancho full', twig: 'BeaverCore/Blocks/full_block.html.twig' }
+
+beaver_core:
+    layouts:  '%page.layouts%'
+    contents: '%contents%'
+    blocks:   '%beaver_blocks_directory%'

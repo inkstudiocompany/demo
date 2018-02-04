@@ -19,14 +19,14 @@ class ContentController extends ControllerBase
     /**
      * @param Request $request
      */
-	public function listAction(Request $request)
+	public function list(Request $request)
 	{
 	    $content = $request->get('content');
 
 	    /** @var ArrayResponse $contentResponse */
-	    $contentResponse = $this->get('beaver_contents.contents')->getContentsByType($content);
+	    $contentResponse = $this->get('beaver.content')->getContentsByType($content);
 
-	    return $this->render('@BeaverBackend/Backend/content-list.html.twig', [
+	    return $this->render('@Backend/Backend/content-list.html.twig', [
 	        'content'   => $contentResponse->getData(),
             'type'      => $content
         ]);
@@ -66,19 +66,19 @@ class ContentController extends ControllerBase
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function editAction(Request $request)
+    public function edit(Request $request)
     {
         $content = $request->get('content');
 
         $data = [];
         /** @var BaseResponse $contentResponse */
-        $contentResponse = $this->get('beaver_contents.contents')->get($content, $request->get('id'));
+        $contentResponse = $this->get('beaver.content')->get($content, $request->get('id'));
         if (BaseResponse::SUCCESS === $contentResponse->isSuccess()) {
             $data = $contentResponse->getData()->toArray();
         }
 
         /** @var Form $form */
-        $form = $this->get('beaver_contents.contents')->form($content, $data);
+        $form = $this->get('beaver.content')->form($content, $data);
 
         $form->handleRequest($request);
 
@@ -93,20 +93,20 @@ class ContentController extends ControllerBase
         }
 
         if (true === $form->isSubmitted()) {
-            $saveResponse = $this->get('beaver_contents.contents')->save($form);
+            $saveResponse = $this->get('beaver.content')->save($form);
             $params['status']   = $saveResponse->isSuccess();
             if (BaseResponse::FAIL === $saveResponse->isSuccess()) {
                 $params['message']  = $saveResponse->getError()->getMessage();
             }
         }
-
-        return $this->render('@BeaverBackend/Forms/content.html.twig', $params);
+        
+        return $this->render('@Backend/Forms/content.html.twig', $params);
     }
 
     /**
      * @param Request $request
      */
-    public function deleteAction(Request $request)
+    public function delete(Request $request)
     {
         $content = $request->get('content');
 

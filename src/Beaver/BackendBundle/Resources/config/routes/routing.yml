@@ -12,28 +12,25 @@ beaver.backend.pages:
 
 beaver.backend.page.new:
     path:     /page/new
-    defaults: { _controller: BeaverBackendBundle:Backend:page }
+    controller: Beaver\BackendBundle\Controller\BackendController::page
 
 beaver.backend.page.edit:
     path:     /page/{id}
-    defaults: { _controller: BeaverBackendBundle:Backend:page }
+    controller: Beaver\BackendBundle\Controller\BackendController::page
 
 #Contents
 beaver.backend.contents:
     path: /contents/{content}
-    defaults: { _controller: BeaverBackendBundle:Content:list }
-
+    controller: Beaver\BackendBundle\Controller\ContentController::list
 beaver.backend.new:
     path: /contents/{content}/new
-    defaults: { _controller: BeaverBackendBundle:Content:new }
-
+    controller: Beaver\BackendBundle\Controller\ContentController::new
 beaver.backend.edit:
     path: /contents/{content}/{id}/edit
-    defaults: { _controller: BeaverBackendBundle:Content:edit }
-
+    controller: Beaver\BackendBundle\Controller\ContentController::edit
 beaver.backend.delete:
     path: /contents/{content}/{id}/delete
-    defaults: { _controller: BeaverBackendBundle:Content:delete }
+    controller: Beaver\BackendBundle\Controller\ContentController::delete
 
 beaver.backend.page:
     path:   /{slug}

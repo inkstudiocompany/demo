@@ -45,7 +45,9 @@ class ContentService
     {
         $contents = [];
         if (true === $this->serviceContainer->hasParameter('contents')) {
-            $contents = $this->serviceContainer->getParameter('contents');
+            foreach ($this->serviceContainer->getParameter('contents') as $content) {
+                $contents[$content['type']] = $content;
+            }
         }
         return $contents;
     }

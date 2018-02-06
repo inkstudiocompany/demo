@@ -71,8 +71,8 @@ class LayoutService
      */
     public function getConfig()
     {
-        if (true === $this->serviceContainer->hasParameter('beaver_core.layouts')) {
-            return $this->serviceContainer->getParameter('beaver_core.layouts');
+        if (true === $this->serviceContainer->hasParameter('layouts')) {
+            return $this->serviceContainer->getParameter('layouts');
         }
     }
 }

@@ -2,12 +2,12 @@
     {% if component.isPublished %}
         <button class="btn btn-outline-success btn-sm" data-rel="page-publish" data-id="{{ component.id }}">
             Published
-            <i class="fa fa-check-circle-o"></i>
+            <i class="fas fa-check"></i>
         </button>
     {% else %}
         <button class="btn btn-outline-danger btn-sm" data-rel="page-publish" data-id="{{ component.id }}">
             Unpublised
-            <i class="fa fa-times-circle-o"></i>
+            <i class="fas fa-ban"></i>
         </button>
     {% endif %}
 {% endmacro %}

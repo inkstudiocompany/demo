@@ -34,7 +34,7 @@ class BackendController extends ControllerBase
         }
 	    
 		return $this->render(
-            '@BeaverBackend/Backend/pages-list.html.twig', [
+            '@Backend/Backend/pages-list.html.twig', [
 		    'pages' => $pagesResponse->getData()
         ]);
 	}
@@ -74,7 +74,7 @@ class BackendController extends ControllerBase
             $success = $pageResponse->isSuccess();
         }
 	    
-        return $this->render('@BeaverBackend/Forms/page.html.twig', [
+        return $this->render('@Backend/Forms/page.html.twig', [
             'form'      => $pageFormType->createView(),
             'success'   => $success
         ]);

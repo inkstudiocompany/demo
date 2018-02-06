@@ -3,5 +3,5 @@
 {% block form %}
     <h1 class="ui header">New Page</h1>
 
-    {% embed 'BeaverBackendBundle:Embed:form.html.twig' with { 'form' : form } %}{% endembed %}
+    {% embed '@Backend/Embed/form.html.twig' with { 'form' : form } %}{% endembed %}
 {% endblock form %}

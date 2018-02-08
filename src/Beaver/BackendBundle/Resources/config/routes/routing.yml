@@ -32,4 +32,5 @@ beaver.backend.delete:
 
 beaver.backend.page:
     path:   /{slug}
-    defaults: { _controller: BeaverCoreBundle:Page:page, slug: 'home' }
+    controller: Beaver\CoreBundle\Controller\PageController::page
+    defaults: { slug: 'home' }

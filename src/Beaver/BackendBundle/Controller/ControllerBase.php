@@ -47,7 +47,7 @@ class ControllerBase extends AbstractController
      */
     public function render(string $view, array $parameters = array(), Response $response = null): Response
     {
-        $parameters['Bundle']   = self::Bundle();
+    	$parameters['Bundle']   = self::Bundle();
         $parameters['menu']     = $this->get('beaver.backend.menu')->getMenu();
         return parent::render($view, $parameters, $response);
     }

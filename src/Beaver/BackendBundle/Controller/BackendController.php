@@ -4,6 +4,7 @@ namespace Beaver\BackendBundle\Controller;
 
 use Beaver\BackendBundle\Form\PageFormType;
 use Beaver\CoreBundle\Response\BaseResponse;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,7 +28,7 @@ class BackendController extends ControllerBase
      */
 	public function pages()
 	{
-	    $pagesResponse = $this->get('beaver_backend.page')->getPages();
+	    $pagesResponse = $this->get('beaver.backend.page')->getPages();
 	    
 	    if (BaseResponse::FAIL === $pagesResponse->isSuccess()) {
 	        throw new \Exception($pagesResponse->getError()->getMessage());
@@ -52,18 +53,19 @@ class BackendController extends ControllerBase
         }
     
         if ($pageId = $request->get('id')) {
-            $pageResponse = $this->get('beaver_backend.page')->getById($pageId);
+            $pageResponse = $this->get('beaver.backend.page')->getById($pageId);
         
-            if (BaseResponse::SUCCESS === $pageResponse->isSuccess()) {
-                $pageFormType = $this->get('form.factory')
-					->create(PageFormType::class, $pageResponse->getData()->toArray());
+            if (BaseResponse::FAIL === $pageResponse->isSuccess()) {
+                throw new Exception($pageResponse->getError()->getMessage());
             }
+	        $pageFormType = $this->get('form.factory')
+		        ->create(PageFormType::class, $pageResponse->getData()->toArray());
         }
         
         if (true === $request->isMethod(Request::METHOD_POST)) {
             $pageFormType->handleRequest($request);
     
-            $pageResponse = $this->get('beaver_backend.page')->process($pageFormType);
+            $pageResponse = $this->get('beaver.backend.page')->process($pageFormType);
             
             if ($pageResponse->isSuccess()) {
                 $this->redirectToRoute('beaver.backend.page.edit', [

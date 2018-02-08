@@ -2,31 +2,32 @@ imports:
     - { resource: 'widgets.yml' }
 
 services:
-    beaver_core.context:
-        public: false
+    beaver.core.context:
+        public: true
         class: Beaver\CoreBundle\Service\ContextService
         arguments: ['@router.request_context']
-    beaver_core.layouts:
-        public: false
+
+    beaver.core.layouts:
+        public: true
         class: Beaver\CoreBundle\Service\LayoutService
         arguments: ['@service_container']
 
-    beaver_core.page:
+    beaver.core.page:
         public: true
         class: Beaver\CoreBundle\Service\PageService
-        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.layouts', '@beaver_core.block', '@beaver_core.context']
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver.core.layouts', '@beaver.core.block', '@beaver.core.context']
 
-    beaver_core.block:
-        public: false
+    beaver.core.block:
+        public: true
         class: Beaver\CoreBundle\Service\BlockService
-        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.context', '@beaver_core.components', '@beaver_core.widget', '%kernel.project_dir%', '%beaver_blocks_directory%']
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver.core.context', '@beaver.core.components', '@beaver.core.widget', '%kernel.project_dir%', '%beaver_blocks_directory%']
 
-    beaver_core.widget:
-        public: false
+    beaver.core.widget:
+        public: true
         class: Beaver\CoreBundle\Service\WidgetService
-        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.context', '@beaver_core.components']
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver.core.context', '@beaver.core.components']
 
-    beaver_core.components:
-        public: false
+    beaver.core.components:
+        public: true
         class: Beaver\CoreBundle\Service\ComponentService
         arguments: [ '@doctrine.orm.entity_manager']

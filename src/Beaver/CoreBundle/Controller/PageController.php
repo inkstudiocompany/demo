@@ -15,10 +15,10 @@ class PageController extends ControllerBase
      * @param string $slug
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function pageAction($slug = 'home')
+    public function page($slug = 'home')
     {
         /** @var BaseResponse $pageResponse */
-        $pageResponse = $this->get('beaver_core.page')->getPage($slug);
+        $pageResponse = $this->get('beaver.core.page')->getPage($slug);
         
         if (BaseResponse::FAIL === $pageResponse->isSuccess()) {
 			throw $this->createNotFoundException('La página solicitada no existe.');

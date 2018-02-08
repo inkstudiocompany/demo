@@ -1,18 +1,18 @@
 services:
-    beaver_backend.forms.page:
+    beaver.backend.page.type:
         public: false
         class: Beaver\BackendBundle\Form\PageFormType
-        arguments: ['@beaver_core.layouts']
+        arguments: ['@beaver.core.layouts']
         tags: [form.type]
 
-    beaver_backend.forms.block:
+    beaver.backend.block.type:
         public: false
         class: Beaver\BackendBundle\Form\BlockFormType
-        arguments: ['@beaver_core.block']
+        arguments: ['@beaver.core.block']
         tags: [form.type]
 
-    beaver_backend.forms.widget:
+    beaver.backend.widget.type:
         public: false
         class: Beaver\BackendBundle\Form\WidgetFormType
-        arguments: ['@beaver_core.widget']
+        arguments: ['@beaver.core.widget']
         tags: [form.type]

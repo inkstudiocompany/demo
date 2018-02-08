@@ -78,7 +78,7 @@ class PageService extends ServiceBase
         $pageResponse = new PageResponse();
         
         try {
-            $pageEntity = $this->entityManager->getRepository('BeaverCoreBundle:Page')
+            $pageEntity = $this->entityManager->getRepository(Page::class)
                 ->find($pageId)
             ;
             

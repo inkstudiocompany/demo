@@ -1,8 +1,8 @@
 services:
-    beaver_backend.page:
+    beaver.backend.page:
         public: true
         class: Beaver\BackendBundle\Service\PageService
-        arguments: [ '@doctrine.orm.entity_manager', '@beaver_core.layouts', '@beaver_core.block', '@beaver_core.context']
+        arguments: [ '@doctrine.orm.entity_manager', '@beaver.core.layouts', '@beaver.core.block', '@beaver.core.context']
 
     beaver.backend.menu:
         public: true

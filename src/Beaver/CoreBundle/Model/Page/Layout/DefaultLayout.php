@@ -62,7 +62,7 @@ class DefaultLayout implements LayoutInterface
      */
     public function getPath()
     {
-        return '@BeaverCore/Layouts/Page/default-layout.html.twig';
+        return '@Core/Layouts/Page/default-layout.html.twig';
     }
     
     /**
@@ -83,5 +83,4 @@ class DefaultLayout implements LayoutInterface
     {
         return $this->areas[$areaString];
     }
-
 }

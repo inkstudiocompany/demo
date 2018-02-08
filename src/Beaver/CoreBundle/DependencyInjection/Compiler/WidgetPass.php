@@ -26,11 +26,11 @@ class WidgetPass implements CompilerPassInterface
      */
     public function process(ContainerBuilder $container)
     {
-        if (!$container->has('beaver_core.widget')) {
-            throw new Exception('No esta definido WidgetService.');
+        if (!$container->has('beaver.core.widget')) {
+            throw new Exception('No esta definido WidgetService. Fijate de definirlo en los servicios de Core.');
         }
 
-        $widgetService = $container->findDefinition('beaver_core.widget');
+        $widgetService = $container->findDefinition('beaver.core.widget');
 
         foreach ($container->findTaggedServiceIds('beaver.widget') as $id => $tags) {
             $widgetService->addMethodCall('addWidget', [$id, new Reference($id)]);

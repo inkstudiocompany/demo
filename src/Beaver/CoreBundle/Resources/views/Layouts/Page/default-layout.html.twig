@@ -7,7 +7,7 @@
     <div class="container">
         {% for area in page.layout.areas %}
             <div id="{{ area.name }}" data-beaver="area" data-page="{{ page.id }}" class="ui grid">
-                {% include '@BeaverCore/Components/blocks.html.twig' with { 'blocks' : area.blocks } %}
+                {% include '@Core/Components/blocks.html.twig' with { 'blocks' : area.blocks } %}
             </div>
         {% endfor %}
     </div>

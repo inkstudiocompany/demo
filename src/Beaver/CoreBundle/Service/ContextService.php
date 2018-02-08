@@ -10,6 +10,7 @@ namespace Beaver\CoreBundle\Service;
 
 use Beaver\BackendBundle\BackendBundle;
 use Beaver\CoreBundle\BeaverCoreBundle;
+use Beaver\CoreBundle\CoreBundle;
 use Symfony\Component\Routing\RequestContext;
 
 /**
@@ -34,7 +35,7 @@ class ContextService
      */
     public function getBundle()
     {
-        $bundle = BeaverCoreBundle::BUNDLE;
+        $bundle = CoreBundle::BUNDLE;
         if (stristr($this->requestContext->getPathInfo(), 'backend')) {
             $bundle = BackendBundle::BUNDLE;
         }

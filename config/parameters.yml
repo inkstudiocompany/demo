@@ -1,7 +1,6 @@
 parameters:
     layouts:
         - Beaver\CoreBundle\Model\Page\Layout\DefaultLayout
-        #- { name: 'Seccion layout', twig: 'BeaverCore/Layouts/Page/default-layout.html.twig' }
 
     blocks:
         - { name: 'Ancho full Overwrite', twig: 'BeaverCore/Blocks/full_block.html.twig' }
